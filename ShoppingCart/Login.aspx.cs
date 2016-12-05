@@ -13,7 +13,7 @@ namespace ShoppingCart
         {
             Login1.Focus();
         }
-
+        // Login information for Administrator to view GridView and perform CRUD on records
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
 

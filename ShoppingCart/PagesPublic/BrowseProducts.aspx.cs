@@ -4,7 +4,6 @@ using System.Web;
 using System.Web.UI.WebControls;
 using System.Collections.Generic;
 
-
 namespace ShoppingCart
 {
 
@@ -16,6 +15,7 @@ namespace ShoppingCart
 
         }
 
+        
         protected void dlProduct_ItemCommand(object source, DataListCommandEventArgs e)
         {
             BusinessLogic bl = new BusinessLogic();
@@ -26,7 +26,7 @@ namespace ShoppingCart
             var description = ((Label)e.Item.FindControl("lblDescription")).Text;
             var price = ((Label)e.Item.FindControl("lblPrice")).Text;
             var quantityDDL = ((DropDownList)e.Item.FindControl("ddlQuantity"));
-
+            //Business Logic for Cart Contents
 
             var quantity = quantityDDL.SelectedValue;
             quantityDDL.SelectedIndex = 0;
@@ -47,7 +47,14 @@ namespace ShoppingCart
             ContentPlaceHolder ph = (ContentPlaceHolder)Master.Master.FindControl("MainContent");
             Label cartLabel = (Label)ph.FindControl("lblCart");
             cartLabel.Text = "Shopping Cart (" + cartItems.ToString() + ")";
+            
+
 
         }
     }
 }
+
+
+
+
+

@@ -8,7 +8,8 @@
         ID="grdCookies"
         runat="server"
         CaptionAlign="Bottom"
-        Caption="*ASP.NET must track a session ID for each user so that it can map the user to session state information on the server. By default, ASP.NET uses a non-persistent cookie to store the session state.">
+        Caption="*ASP.NET must track a session ID for each user so that it can map the user to session state information on the server. 
+        By default, ASP.NET uses a non-persistent cookie to store the session state.">
     </asp:GridView>
     <br />
     <asp:Button ID="btnGetCookies" runat="server" Text="Get Cookies" OnClick="btnGetCookies_Click" />

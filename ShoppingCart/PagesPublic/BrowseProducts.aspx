@@ -12,6 +12,7 @@
     
                     <div class="col-md-9">
 
+                        <!--Begin carousel to rotate through banner images.-->
                         <div class="row carousel-holder">
 
                             <div class="col-md-12">
@@ -44,7 +45,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--End Carousel-->
+                    
                     <div class="row">
 
                         <div class="col-sm-3">
@@ -58,12 +60,29 @@
                             </div>
                         </div>
 
+                        <!--search box for users to search for products-->
+
+                        <div class="col-sm-3 col-md-3 pull-right">
+                            <form class="navbar-form" role="search" id="searchForm">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" name="search" />
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit" onclick="GetProducts"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--end search box-->
+
                         <br />
                         <br />
                     </div>
 
                     <h1>All Products</h1>
-
+                    <!--Display all products from Products table which include Name, Picture, Description, Price, and price per portion.  
+                        *ASP.NET must track a session ID for each user so that it can map the user to session state information on the server. 
+        By default, ASP.NET uses a non-persistent cookie to store the session state.-->
                 <asp:DataList ID="dlProduct" runat="server" OnItemCommand="dlProduct_ItemCommand" DataSourceID="odsProducts" DataKeyField="Id" RepeatColumns="4" RepeatDirection="Horizontal">
                     <ItemTemplate>
                         <div class="product-content">

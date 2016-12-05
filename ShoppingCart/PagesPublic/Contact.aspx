@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="Browse" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ShoppingCart.Contact" %>
 
-<%--<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="publicContentPlaceHolder" runat="server">
     <head>
     <title>Contact Form</title>
@@ -23,9 +20,7 @@
 
             <h1>Contact Form</h1>
 
-               <%-- <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>--%>
-
-
+                <!--Contact page and Feedback. bootstrapious template. required fields such as name, email, message checked-->
                 <form id="contact-form" method="post" action="contact.php" role="form">
 
                     <div class="messages"></div>
@@ -101,4 +96,3 @@
     <?php include 'contact.php';?>
 </body>
 </asp:Content>
-<%--</html>--%>

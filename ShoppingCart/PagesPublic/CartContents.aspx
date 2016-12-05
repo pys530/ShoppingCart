@@ -12,8 +12,9 @@
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
             <asp:BoundField DataField="Total" HeaderText="Total" ReadOnly="True" SortExpression="Total" />
         </Columns>
+        
     </asp:GridView>
     <asp:Button ID="btnCheckOut" CssClass="btn pull-right" runat="server" Text="Check Out" />
     <asp:ObjectDataSource ID="odsCart" runat="server" SelectMethod="getCartContents" TypeName="ShoppingCart.BusinessLogic" DataObjectTypeName="ShoppingCart.CartItem" DeleteMethod="deleteCartItem"></asp:ObjectDataSource>
-
+    <!--Grid View Page will update with Cart items.  Users able to view cart contents such as name, price, quantity, product id, total.  Session controlled-->
 </asp:Content>
