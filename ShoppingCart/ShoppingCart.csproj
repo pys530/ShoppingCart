@@ -151,6 +151,7 @@
       <DependentUpon>ECOMMERCE.mdf</DependentUpon>
     </Content>
     <Content Include="PagesPublic\BrowseProducts.aspx" />
+    <Content Include="PagesPublic\Results.aspx" />
     <Content Include="PagesPublic\CartContents.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -293,6 +294,13 @@
     </Compile>
     <Compile Include="PagesPublic\BrowseProducts.aspx.designer.cs">
       <DependentUpon>BrowseProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesPublic\Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesPublic\Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesPublic\CartContents.aspx.cs">
       <DependentUpon>CartContents.aspx</DependentUpon>

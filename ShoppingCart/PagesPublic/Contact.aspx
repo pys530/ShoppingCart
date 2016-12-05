@@ -1,13 +1,17 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Title="Browse" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ShoppingCart.Contact" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<%--<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="publicContentPlaceHolder" runat="server">
+    <head>
     <title>Contact Form</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
     <link href='content/custom.css' rel='stylesheet' type='text/css'/>
+    <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 
@@ -96,4 +100,5 @@
     <script src="scripts/contact.js"></script>
     <?php include 'contact.php';?>
 </body>
-</html>
+</asp:Content>
+<%--</html>--%>

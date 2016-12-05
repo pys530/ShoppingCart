@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!-- jQuery -->
     <script src="~/Scripts/jquery-3.1.1.js"></script>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css"/>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="~/Script/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -29,6 +29,18 @@
                     <li><a runat="server" href="~/PagesPublic/Help.aspx">Help</a></li>
                 </ul>
 
+                <!--search box-->
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form" role="search" action="~/PagesPublic/Results.aspx">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search" ></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+           
                 <ul class="nav pull-right">
                     <li class="cart-link"></li>
                 </ul>
@@ -36,8 +48,8 @@
             </div>
 
         </div>
-    </div>
-
+        </div>
+ 
     <br />
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
@@ -49,6 +61,7 @@
         </ContentTemplate>
     </asp:UpdatePanel>
     <asp:ContentPlaceHolder ID="publicContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
 
 </asp:Content>
 
