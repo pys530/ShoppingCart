@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Browse" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="ShoppingCart.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="publicContentPlaceHolder" runat="server">
-    <head>
+    <%--<head>
     <title>Contact Form</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,7 +10,7 @@
     <link href='content/custom.css' rel='stylesheet' type='text/css'/>
     <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body>
+<body>--%>
 
     <div class="container">
 
@@ -89,10 +89,10 @@
     </div>
     <!-- /.container-->
 
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <%--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="scripts/validator.js"></script>
-    <script src="scripts/contact.js"></script>
+    <script src="scripts/contact.js"></script>--%>
     <?php include 'contact.php';?>
-</body>
+<%--</body>--%>
 </asp:Content>

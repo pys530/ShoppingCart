@@ -1,13 +1,17 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedPublic.master.cs" Inherits="ShoppingCart.NestedPublic" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <!-- jQuery -->
-    <script src="~/Scripts/jquery-3.1.1.js"></script>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="~/Script/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+        <link href='content/custom.css' rel='stylesheet' type='text/css' />
+        <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    </head>
+    
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -38,7 +42,15 @@
 
         </div>
         </div>
- 
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/Script/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
     <br />
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>

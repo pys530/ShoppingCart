@@ -14,7 +14,13 @@
 
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+        <link href='content/custom.css' rel='stylesheet' type='text/css' />
+        <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form runat="server">
@@ -35,7 +41,13 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
+                <asp:ScriptReference Path="https://code.jquery.com/jquery-1.12.0.min.js"></asp:ScriptReference>
+                <asp:ScriptReference Path="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></asp:ScriptReference>
+                <asp:ScriptReference Path="/Scripts/validator.js"/>
+                <asp:ScriptReference Path="~/Scripts/contact.js"/>
+                <asp:ScriptReference Path="~/Scripts/jquery-3.1.1.js"/>
+                <asp:ScriptReference Path="~/Script/jquery.min.js"/>
+                <asp:ScriptReference Path="~/Scripts/bootstrap.min.js"/>
             </Scripts>
         </asp:ScriptManager>
 

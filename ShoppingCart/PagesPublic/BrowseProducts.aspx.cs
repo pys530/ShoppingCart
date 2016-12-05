@@ -10,10 +10,7 @@ namespace ShoppingCart
     public partial class BrowseProducts : System.Web.UI.Page
     {
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         
         protected void dlProduct_ItemCommand(object source, DataListCommandEventArgs e)
@@ -47,7 +44,65 @@ namespace ShoppingCart
             ContentPlaceHolder ph = (ContentPlaceHolder)Master.Master.FindControl("MainContent");
             Label cartLabel = (Label)ph.FindControl("lblCart");
             cartLabel.Text = "Shopping Cart (" + cartItems.ToString() + ")";
-            
+
+
+    //        protected string[] SplitWords(string s)
+    //    {
+    //        return Regex.Split(s, @"\W+");
+    //    }
+    //    protected string UpperCaseFirst(string s)
+    //    {
+    //        if (string.IsNullOrEmpty(s))
+    //        {
+    //            return string.Empty;
+    //        }
+    //        else
+    //        {
+    //            return char.ToUpper(s[0]) + s.Substring(1);
+    //        }
+
+    //    }
+    //    protected List<Product> GetProducts(object source, EventArgs e)
+    //    {
+    //        var terms = Request.Form.GetValues("search");
+    //        var t = terms[0];
+    //        string[] words = SplitWords(t);
+    //        List<string> listItems = new List<string>();
+
+    //        foreach (var item in words)
+    //        {
+    //            listItems.Add(item);
+    //        }
+    //        List<Product> returnList = new List<Product>();
+    //        BusinessLogic bl = new BusinessLogic();
+    //        List<Product> products = bl.getProductList();
+    //        // loop through the number of products
+    //        foreach (Product product in products)
+    //        {
+    //            // loop through the terms passed
+    //            foreach (var item in listItems)
+    //            {
+    //                // uppercase first letter to match dataset
+    //                var itemU = UpperCaseFirst(item);
+    //                var productU = product.Name;
+    //                if (productU.Contains(itemU))
+    //                {
+    //                    returnList.Add(new Product
+    //                    {
+    //                        Id = product.Id,
+    //                        Name = product.Name,
+    //                        Price = product.Price,
+    //                        Description = product.Description
+    //                    });
+    //                }
+    //            }
+
+    //        }
+    //    }
+    //}
+
+    //        return returnList;
+    //    }
 
 
         }

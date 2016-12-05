@@ -1,7 +1,16 @@
 ﻿<%@ Page Title="Browse" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="BrowseProducts.aspx.cs" Inherits="ShoppingCart.BrowseProducts" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="publicContentPlaceHolder" runat="server">
-
+    <%--<head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+        <link href='content/custom.css' rel='stylesheet' type='text/css' />
+        <link href="~/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+    </head>
+    <body>--%>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         
         <ContentTemplate>
@@ -108,6 +117,7 @@
                 </asp:DataList>
                 <asp:ObjectDataSource ID="odsProducts" runat="server" SelectMethod="getActiveProductList" TypeName="ShoppingCart.BusinessLogic"></asp:ObjectDataSource>
             </div>
+
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>
