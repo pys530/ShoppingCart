@@ -120,6 +120,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Images\Small\" />
   </ItemGroup>
   <ItemGroup>
@@ -146,10 +147,6 @@
     <Content Include="PagesAdmin\AdminOrders.aspx" />
     <Content Include="PagesAdmin\AdminUsers.aspx" />
     <Content Include="PagesAdmin\AdminProduct.aspx" />
-    <Content Include="App_Data\ECOMMERCE.mdf" />
-    <Content Include="App_Data\ECOMMERCE_log.ldf">
-      <DependentUpon>ECOMMERCE.mdf</DependentUpon>
-    </Content>
     <Content Include="PagesPublic\BrowseProducts.aspx" />
     <Content Include="PagesPublic\Results.aspx" />
     <Content Include="PagesPublic\CartContents.aspx" />
