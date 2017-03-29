@@ -57,18 +57,19 @@ __It is recommended that you look at previous versions of REDCap for comparison 
     <li>locate the public redcap folder: cd \var\www\html (app root)</li>
     <li>cd into the VCU_REDCap repository folder</li>
     <li>git pull , this command will update to the latest version of the repository</li>
-    <li>a. Copy the version folder you want to upgrade to: cp -avr VCU_REDCap/redcap/redcap_v"new_version" /redcap (copies redcap_v"new_version" folder into /redcap)</li>
-    <li>b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
-    Clone or Download > Download Zip</li>
-    </ol>
+    <li>a. Copy the version folder you want to upgrade to: cp -avr VCU_REDCap/redcap/redcap_v"new_version" /redcap (copies redcap_v"new_version" folder into /redcap)</li></ol>
+ 
+    12. b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
+    Clone or Download > Download Zip
+    
     <img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
     
-    12b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
+    12. b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
     Connect to test.redcap.vcu.edu in WinSCP
     
     <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic"/>
     
-    12b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
+    12. b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
     /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
     
     <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
