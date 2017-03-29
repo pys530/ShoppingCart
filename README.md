@@ -61,9 +61,7 @@ __It is recommended that you look at previous versions of REDCap for comparison 
     </ol>
     
 12.b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
-    Clone or Download > Download Zip
-    
-    <img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
+    Clone or Download > Download Zip<img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
     
 12.b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
     Connect to test.redcap.vcu.edu in WinSCP
