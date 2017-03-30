@@ -61,16 +61,20 @@ __It is recommended that you look at previous versions of REDCap for comparison 
     </ol>
     
 12.b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
-    Clone or Download > Download Zip<img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
+    Clone or Download > Download Zip
+    <img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
     
 12.b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
-    Connect to test.redcap.vcu.edu in WinSCP<img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic"/>
+    Connect to test.redcap.vcu.edu in WinSCP
+    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic"/>
     
 12.b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
-    /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap<img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
+    /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
+    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
     
 13.The new version of REDCap is now available to REDCap, go to the Control Panel to start upgrade process.  The REDCap web app will 	 recognize the upgrade file(s).
 14.Click on Upgrade under Notifications
+
 <img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel"/>
     
 15.Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
@@ -78,13 +82,14 @@ __It is recommended that you look at previous versions of REDCap for comparison 
  <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic"/>
     
 16.Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
-    17. Execute the script (Thunderbolt symbol).<img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic2.png" alt="mysql pic 2"/>
+17.Execute the script (Thunderbolt symbol).<img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic2.png" alt="mysql pic 2"/>
     
 18.Go back to the REDCap web Control Center and scroll down to verify REDCap was installed properly.
 	If there are errors for Basic or Secondary Tests, read the instructions on the Control Center and execute any additional 		queries.
+	
 <img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel2.png" alt="redcap control panel 2"/>
     
-  19.Enjoy!
+19.Enjoy!
   
 
 __This repository includes the hooks file__
