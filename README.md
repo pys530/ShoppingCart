@@ -77,12 +77,12 @@ __It is recommended that you look at previous versions of REDCap for comparison 
 
 <img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel"/>
     
-15.Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
+15. Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
  
  <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic"/>
     
-16.Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
-17.Execute the script (Thunderbolt symbol).<img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic2.png" alt="mysql pic 2"/>
+16. Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
+17. Execute the script (Thunderbolt symbol).<img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic2.png" alt="mysql pic 2"/>
     
 18.Go back to the REDCap web Control Center and scroll down to verify REDCap was installed properly.
 	If there are errors for Basic or Secondary Tests, read the instructions on the Control Center and execute any additional 		queries.
