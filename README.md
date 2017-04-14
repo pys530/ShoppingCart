@@ -7,7 +7,6 @@ __Latest_ Version 7.3.1 Available__
         <td>OS</td>
         <td>Apache</td>
         <td>PHP</td>
-	<td>Production Version</td>
     </tr>
     <tr>
         <td>RHEL 6.7</td>
@@ -171,28 +170,28 @@ __redcap\version\Resources\js\base.js --> starting line 4765__
 12. b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/redcap.vcu.edu/public_html/redcap for production or
 /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap for test
     
-    Connect to redcap.vcu.edu for prouction or test.redcap.vcu.edu for test in WinSCP
+    Connect to redcap.vcu.edu for production or test.redcap.vcu.edu for test in WinSCP
     <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic" width="1200" height="555"/>
     
 12. b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
     /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
-    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
+    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2" width="1200" height="555"/>
     
 13. The new version of REDCap is now available to REDCap, go to the Control Panel to start upgrade process.  The REDCap web app will 	 recognize the upgrade file(s).
 
 14. Click on Upgrade under Notifications
 
-<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel"/>
+<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel" width="1200" height="555"/>
     
 15. Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
  
- <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic"/>
+ <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic" width="1200" height="555"/>
     
 16. Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
 17. Execute the script (Thunderbolt symbol).
 18. Go back to the REDCap web Control Center and scroll down to verify REDCap was installed properly.
 	If there are errors for Basic or Secondary Tests, read the instructions on the Control Center and execute any additional 		queries.
 	
-<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel2.png" alt="redcap control panel 2"/>
+<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel2.png" alt="redcap control panel 2" width="1200" height="555"/>
     
 19. Enjoy!
