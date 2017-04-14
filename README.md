@@ -1,4 +1,4 @@
-# ShoppingCart
+# Upgrade Instructions
 #REDCap @ Virginia commonwealth University
 __Latest_ Version 7.3.1 Available__
 <table>
@@ -7,6 +7,7 @@ __Latest_ Version 7.3.1 Available__
         <td>OS</td>
         <td>Apache</td>
         <td>PHP</td>
+	<td>Production Version</td>
     </tr>
     <tr>
         <td>RHEL 6.7</td>
@@ -14,8 +15,12 @@ __Latest_ Version 7.3.1 Available__
         <td>7.1.16</td>
     </tr>
 </table>
+
 __Location: https://redcap.vcu.edu
 __Current version installed on Production: v7.2.2__
+
+__Test Location: https://test.redcap.vcu.edu
+__Current version installed on Test: v7.3.2__
 
 __Requirements:__
 > Administrative Access (write) to REDCap web Control Panel for redcap.vcu.edu and test.redcap.vcu.edu
@@ -42,57 +47,6 @@ for VCU could be added prior to installation of REDCap.
 > might not be exactly the same. You'll need to decipher that as you copy/paste.
 
 __It is recommended that you look at previous versions of REDCap for comparison prior to completing the below tasks.__
-
-> __The following steps are for upgrading REDCap for VCU.__
-> __Obtaining redcap installation files.__
-<ol style="color:#000000; font-style:oblique; font-weight:bold">
-    <li>Thoroughly install and test software prior to installing on production.</li>
-    <li>Create change management ticket on proposed time and date. (https://servicedesk.vcu.edu)</li>
-    <li>Requirements: VCU eID. You'll also need approval from Manager (atleast for REDCap)</li>
-    <li>Create a new service desk ticket for elevated access to the redcap production database. (You are required to use your own credentials to run the sql scripts provided by the REDCap install process)</li>
-    <li>Do not run the upgrade scripts using the service account</li>
-    <li>Submit this ticket using servicedesk.vcu.edu, go to Applications > Database > MySQL Database request</li>
-    <li>Once that has been approved, you'll be able to execute sql scripts on the redcap production database (under your eid).</li>
-    <li>Log onto the server / SSH into redcap server (redcap.vcu.edu) or test server (test.redcap.vcu.edu)</li>
-    <li>locate the public redcap folder: cd \var\www\html (app root)</li>
-    <li>cd into the VCU_REDCap repository folder</li>
-    <li>git pull , this command will update to the latest version of the repository</li>
-    <li>a. Copy the version folder you want to upgrade to: cp -avr VCU_REDCap/redcap/redcap_v"new_version" /redcap (copies redcap_v"new_version" folder into /redcap)</li>
-    </ol>
-    
-12. b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
-    Clone or Download > Download Zip
-    <img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
-    
-12. b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
-    
-    Connect to test.redcap.vcu.edu in WinSCP
-    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic"/>
-    
-12. b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
-    /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
-    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
-    
-13. The new version of REDCap is now available to REDCap, go to the Control Panel to start upgrade process.  The REDCap web app will 	 recognize the upgrade file(s).
-
-14. Click on Upgrade under Notifications
-
-<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel"/>
-    
-15. Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
- 
- <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic"/>
-    
-16. Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
-17. Execute the script (Thunderbolt symbol).<img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic2.png" alt="mysql pic 2"/>
-    
-18.Go back to the REDCap web Control Center and scroll down to verify REDCap was installed properly.
-	If there are errors for Basic or Secondary Tests, read the instructions on the Control Center and execute any additional 		queries.
-	
-<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel2.png" alt="redcap control panel 2"/>
-    
-19.Enjoy!
-  
 
 __This repository includes the hooks file__
 > Includes /hooks/hooks.php bootstrap file
@@ -192,3 +146,53 @@ __redcap\version\Resources\js\base.js --> starting line 4765__
 	}
     // -- End Redcap Access Manager -- 1.1.5.1	
 ```
+
+> __The following steps are for upgrading REDCap for VCU.__
+> __Obtaining redcap installation files.__
+<ol style="color:#000000; font-style:oblique; font-weight:bold">
+    <li>Thoroughly install and test software prior to installing on production.</li>
+    <li>Create change management ticket on proposed time and date. (https://servicedesk.vcu.edu)</li>
+    <li>Requirements: VCU eID. You'll also need approval from Manager (atleast for REDCap)</li>
+    <li>Create a new service desk ticket for elevated access to the redcap production database. (You are required to use your own credentials to run the sql scripts provided by the REDCap install process)</li>
+    <li>Do not run the upgrade scripts using the service account</li>
+    <li>Submit this ticket using servicedesk.vcu.edu, go to Applications > Database > MySQL Database request</li>
+    <li>Once that has been approved, you'll be able to execute sql scripts on the redcap production database (under your eid).</li>
+    <li>Log onto the server / SSH into redcap server (redcap.vcu.edu) or test server (test.redcap.vcu.edu)</li>
+    <li>locate the public redcap folder: cd \var\www\html (app root)</li>
+    <li>cd into the VCU_REDCap repository folder</li>
+    <li>git pull , this command will update to the latest version of the repository</li>
+    <li>a. Copy the version folder you want to upgrade to: cp -avr VCU_REDCap/redcap/redcap_v"new_version" /redcap (copies redcap_v"new_version" folder into /redcap)</li>
+    </ol>
+    
+12. b. Alternatively, access GitHub Repository https://github.com/cctrbic/VCU_REDCap 
+    Clone or Download > Download Zip
+    <img src="https://bic.cctr.vcu.edu/images/documentations/git_pic.png" alt="git pic"/>
+    
+12. b. WinSCP is another way to transfer upgrade files to /var/www/vhosts/redcap.vcu.edu/public_html/redcap for production or
+/var/www/vhosts/test.redcap.vcu.edu/public_html/redcap for test
+    
+    Connect to redcap.vcu.edu for prouction or test.redcap.vcu.edu for test in WinSCP
+    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic.png" alt="winscp pic" width="1200" height="555"/>
+    
+12. b. Copy your redcap upgrade folder (i.e. redcap_v7.3.1) into 
+    /var/www/vhosts/test.redcap.vcu.edu/public_html/redcap
+    <img src="https://bic.cctr.vcu.edu/images/documentations/winscp_pic2.png" alt="winscp pic 2"/>
+    
+13. The new version of REDCap is now available to REDCap, go to the Control Panel to start upgrade process.  The REDCap web app will 	 recognize the upgrade file(s).
+
+14. Click on Upgrade under Notifications
+
+<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel.png" alt="redcap control panel"/>
+    
+15. Copy script on left and go to MySQL Workbench and connect using connection name. i.e. Test is “mysqltest2.vcu.edu”, Port: 3306, 	and your Username
+ 
+ <img src="https://bic.cctr.vcu.edu/images/documentations/mysql_pic.png" alt="mysql pic"/>
+    
+16. Click on Create new SQL tab for executing queries (SQL + symbol) and paste the script.
+17. Execute the script (Thunderbolt symbol).
+18. Go back to the REDCap web Control Center and scroll down to verify REDCap was installed properly.
+	If there are errors for Basic or Secondary Tests, read the instructions on the Control Center and execute any additional 		queries.
+	
+<img src="https://bic.cctr.vcu.edu/images/documentations/redcap_controlpanel2.png" alt="redcap control panel 2"/>
+    
+19. Enjoy!
