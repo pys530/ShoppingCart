@@ -159,7 +159,7 @@ rights_216 = "This page may be used for granting users access to this project an
 	may add/assign users or create new roles, and the table at the bottom allows you to make modifications to
 	any existing user or role in the project, as well as view a glimpse of their user privileges.<br/>
 	<div class="green"><strong>Note: </strong>A user must be added using eID username.  Adding a user by email address will not work.</div>"
-	// -- End User RIghts Note Text --
+	// -- End User Rights Note Text --
 ```
 
 __redcap\version\LanguageUpdater\English.ini --> starting line 162__
@@ -167,4 +167,6 @@ __redcap\version\LanguageUpdater\English.ini --> starting line 162__
 	// -- Begin User Rights Hint Text --
 rights_162 = "Give them custom user rights or assign them to a role.
 <div class="red">(e.g., add user by <u>eid</u> and not by <u>eid@mail.edu)</u></div>"
-	// -- End User RIghts Hint Text --
+	// -- End User Rights Hint Text --
+```
+
