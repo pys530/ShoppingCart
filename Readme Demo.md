@@ -151,7 +151,7 @@ __redcap\version\Resources\js\base.js --> starting line 4787__
 ```
 __redcap\version\Resources\js\base.js --> starting line 6029__
 ```js
-	// -- Begin User Rights Note Text --
+	// -- Begin User Rights Note Text -- ="ererere
 rights_216 = "This page may be used for granting users access to this project and for managing the user privileges of those users.
 	You may also create roles to which you may assign users (optional). User roles are useful when you will have several users with the same
 	privileges because they allow you to easily add many users to a role in a much faster manner than setting their
