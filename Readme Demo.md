@@ -149,7 +149,7 @@ __redcap\version\Resources\js\base.js --> starting line 4787__
 	}
     // -- End Redcap Access Manager -- 1.1.5.1	
 ```
-__redcap\version\Resources\js\base.js --> starting line 6029__
+__redcap\version\LanguageUpdater\English.ini --> starting line 6029__
 ```
 	// -- Begin User Rights Note Text --
 rights_216 = "This page may be used for granting users access to this project and for managing the user privileges of those users.
@@ -161,7 +161,6 @@ rights_216 = "This page may be used for granting users access to this project an
 	<div class="green"><strong>Note: </strong>A user must be added using eID username.  Adding a user by email address will not work.</div>"
 	// -- End User Rights Note Text --
 ```
-
 __redcap\version\LanguageUpdater\English.ini --> starting line 162__
 ```
 	// -- Begin User Rights Hint Text --
@@ -169,4 +168,3 @@ rights_162 = "Give them custom user rights or assign them to a role.
 <div class="red">(e.g., add user by <u>eid</u> and not by <u>eid@mail.edu)</u></div>"
 	// -- End User Rights Hint Text --
 ```
-
