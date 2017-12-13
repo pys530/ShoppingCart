@@ -72,7 +72,7 @@ __redcap\version\Classes\Hooks.php --> below redcap_save_record($result)__
     }
 ```
 
-__redcap\version\ProjectGeneral\create_project_form.php --> line 69, between <?php echo $lang["create_project_02"] ?></div></td></tr> AND <tr id="row_purpose" valign="top">__
+__redcap\version\ProjectGeneral\create_project_form.php --> line 69, between ?php echo $lang["create_project_02"] AND tr id="row_purpose" valign="top">__
 ```php
 	<?php
 	// ------------REDCap Hook injection point ------------
