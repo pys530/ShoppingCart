@@ -15,21 +15,26 @@ __Latest_ Version 7.3.1 Available__
     </tr>
 </table>
 
-__Location: https://redcap.vcu.edu
 __Current version installed on Production: v7.2.2__
+Production Location: https://redcap.vcu.edu
+IP Address: 128.172.11.120
+Production Database Connection: mysql-secure2.vcu.edu
 
-__Test Location: https://test.redcap.vcu.edu
 __Current version installed on Test: v7.3.2__
+Test Location: https://test.redcap.vcu.edu
+IP Address: 192.168.75.179
+Test Database Connection: enc1.ucc.vcu.edu
 
 __Requirements:__
-> Administrative Access (write) to REDCap web Control Panel for redcap.vcu.edu and test.redcap.vcu.edu
-> Access to GitHub Repository modified source code https://github.com/cctrbic/VCU_REDCap
-> VPN
-> MySQL Workbench or dbForge Studio
-> Request Access to REDCap Server
-	o As of writing, Jim Agnew is the MYSQL DBA
-> Production server is named redcapdb2
-> Test server is named redcap_devel_instance
+1. Administrative Access (write) to REDCap web Control Panel for https://redcap.vcu.edu and https://test.redcap.vcu.edu
+2. Access to GitHub Repository modified source code https://github.com/cctrbic/VCU_REDCap
+3. VPN
+4. MySQL Workbench or dbForge Studio
+5. Request Access to REDCap Server
+	o As of writing, Jim Agnew (agnew@vcu.edu) is the MYSQL DBA
+	o Submit a Self Service ticket (Application or System - Database) to https://servicedesk.vcu.edu/ for temporary access to Production Database
+6. Production Database server is named redcapdb2
+7. Test Database server is named redcap_devel_instance
 
 __Getting Started__
 
